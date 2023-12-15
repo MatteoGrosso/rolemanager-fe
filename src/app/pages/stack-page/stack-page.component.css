@@ -1,0 +1,114 @@
+.sitemap-navigation {
+    display: inline-block;
+    width: 900px;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0;
+}
+
+.sitemap-navigation ul,
+.sitemap-navigation li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.sitemap-navigation a {
+    display: inline-block;
+}
+
+.sitemap-navigation > .menu-item:not(:first-child)::before,
+.sitemap-navigation > .menu-item-has-children:not(:first-child) > .sub-menu::before {
+    content: '';
+    display: block;
+    position: relative;
+    left: 50%;
+    margin-left: -2px;
+    width: 100%;
+    border-left: #4088c1 solid 4px;
+    height: 2em;
+}
+
+.sitemap-wrapper {
+    padding: 2rem;
+    text-align: center;
+}
+
+.sitemap-navigation a {
+    border-radius: 0.25em;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    transition: 0.25s;
+}
+.sitemap-navigation .menu-item:nth-child(1) a {
+    background: #d5b606dd;
+}
+
+.sitemap-navigation .menu-item:nth-child(2) a {
+    background: #d2970ce3;
+}
+
+.sitemap-navigation .menu-item:nth-child(3) a {
+    background: #d2720ce3;
+}
+
+.sitemap-navigation .menu-item:nth-child(4) a {
+    background: #d25f0ce3;
+}
+
+.sitemap-navigation .menu-item:nth-child(5) a {
+    background: #aa0f0fea;
+}
+
+.sitemap-navigation .menu-item a:hover {
+    background: #04a4a2;
+}
+
+/*
+    BUTTON
+*/
+
+.btn {
+    width: 80px;
+    height: 25px;
+    display: block;
+    padding: 10px 40px;
+    margin: 10px auto;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 4px;
+    outline: none;
+    text-decoration: none;
+    color: #784ba0;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+  }
+  
+  .btn:hover,
+  .btn:focus,
+  .btn:active,
+  .btn:visited {
+    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
+    animation: gelatine 0.5s 1;
+  }
+  
+  @keyframes gelatine {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
+  

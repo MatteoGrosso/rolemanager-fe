@@ -1,0 +1,24 @@
+<div id="login">
+  <h1>Please login with a user account!</h1>
+
+  <form action="/" method="post">
+    <div class="field-wrap">
+        <label *ngIf="!username">Username<span class="req">*</span></label>
+        <input type="text" name="username" required autocomplete="off" [(ngModel)]="username" />
+      </div>
+      
+
+    <div class="field-wrap">
+      <label *ngIf="!password">Password<span class="req">*</span></label>
+      <input type="password" name="password" required autocomplete="off" [(ngModel)]="password" />
+    </div>
+
+    <p class="forgot"><a routerLink=""><u>Forgot Password?</u></a></p>
+
+    <div class="footer">
+      <button class="btn" (click)="checkLogin()">Log In</button>
+      <button class="btn" routerLink="">Go back</button>
+    </div>
+    
+  </form>
+</div>

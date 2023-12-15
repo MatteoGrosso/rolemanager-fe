@@ -1,0 +1,38 @@
+<div *ngFor="let user of users; let i = index">
+    <div class="card">
+      <div class="additional">
+        <div class="user-card">
+          <div class="points center">
+            {{user.role}}
+          </div>
+          <img src="../../assets/icons/user-circle.svg" width="110" height="110" viewBox="0 0 250 250" role="img" class="center">
+        </div>
+        <div class="more-info">
+          <h1>{{user.name}} {{user.surname}}</h1>
+          <div class="coords">
+            <h4>
+              <span>Username</span>
+              <span>{{user.username}}</span>
+            </h4>
+          </div>
+          <div class="coords">
+            <h4>
+              <span>Password</span>
+              <span>{{user.password}}</span>
+            </h4>
+          </div>
+          <div>
+          <button class="custom-btn" (click)="resetPassword(i)"><span>Reset Password</span></button>
+        </div>
+        </div>
+      </div>
+      <div class="general">
+        <h1>{{user.name}} {{user.surname}}</h1>
+        <p>random description random description random description random description random description random description random description random description</p>
+        <h4 class="more"><span ><u>Mouse over</u> for more info</span></h4>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <a class="btn" routerLink="">Go back</a>

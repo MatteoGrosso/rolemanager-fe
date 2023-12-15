@@ -1,0 +1,69 @@
+<div class="wrapper" *ngIf="user">
+    <div class="left">
+        <img src="../../assets/icons/user-circle.svg" alt="user" width="100" />
+        <h4>{{user.name}} {{user.surname}}</h4>
+        <p>{{user.role}}</p>
+    </div>
+    <div class="right">
+        <div class="info">
+            <div class="info_data">
+                <div class="data">
+                    <h4>Username</h4>
+                    <p>{{user.username}}</p>
+                </div>
+                <div class="data" *ngIf="isReadOnlyMode; else changePassword">
+                    <h4>Password</h4>
+                    <div class="password">
+                        <input type="checkbox" class="password-toggle" checked />
+                        <div class="password-background"></div>
+                        <div class="toggle-eye open">
+                            <img src="../../assets/icons/eye-open.svg" class="eye" name="eye-outline"/>
+                        </div>
+                        <div class="toggle-eye close">
+                            <img src="../../assets/icons/eye-close.svg" class="eye" name="eye-off-outline"/>
+                        </div>
+                        <img src="../../assets/icons/lock-closed.svg" class="password-lock" name="lock-closed-outline"/>
+                        <input type="text" class="password-input" value={{user.password}} disabled>
+                    </div>
+                    <div class="footer">
+                        <button class="custom-btn" (click)="changeMode()"><span>Change Password</span></button>
+                    </div>
+                </div>
+                <ng-template #changePassword>
+                    <div class="data">
+                        <h4>Edit Password</h4>
+                        <div class="password password-top">
+                            <input type="checkbox" class="password-toggle" checked />
+                            <div class="password-background"></div>
+                            <div class="toggle-eye open">
+                                <img src="../../assets/icons/eye-open.svg" class="eye" name="eye-outline"/>
+                            </div>
+                            <div class="toggle-eye close">
+                                <img src="../../assets/icons/eye-close.svg" class="eye" name="eye-off-outline"/>
+                            </div>
+                            <img src="../../assets/icons/lock-closed.svg" class="password-lock" name="lock-closed-outline"/>
+                            <input type="text" [(ngModel)]="newPassword" class="password-input">
+                        </div>
+                        <span>Confirm password</span> 
+                        <div class="password confirm">
+                            <input type="checkbox" class="password-toggle" checked />
+                            <div class="password-background"></div>
+                            <div class="toggle-eye open">
+                                <img src="../../assets/icons/eye-open.svg" class="eye" name="eye-outline"/>
+                            </div>
+                            <div class="toggle-eye close">
+                                <img src="../../assets/icons/eye-close.svg" class="eye" name="eye-off-outline"/>
+                            </div>
+                            <img src="../../assets/icons/lock-closed.svg" class="password-lock" name="lock-closed-outline"/>
+                            <input type="text" [(ngModel)]="passwordComp" class="password-input">
+                        </div>
+                    </div>
+                    <div class="footer">
+                        <button class="custom-btn" (click)="confirmPassword()"><span>Confirm</span></button>
+                    </div>
+                    
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</div>
