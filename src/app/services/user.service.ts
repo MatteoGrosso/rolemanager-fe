@@ -39,8 +39,8 @@ export class UserService {
     return this.http.delete<void>(`${this.apiServerURL}/user/delete/${userId}`)
   }
 
-  public resetUserPasswordById(user: UserID): Observable<void>{
-    return this.http.post<void>(`${this.apiServerURL}/user/reset`, user)
+  public resetUserPasswordById(username: string): Observable<void>{
+    return this.http.post<void>(`${this.apiServerURL}/user/reset`, username)
   }
 
 }

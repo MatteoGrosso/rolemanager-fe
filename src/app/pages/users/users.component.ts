@@ -31,7 +31,7 @@ export class UsersComponent implements OnInit{
 
   resetPassword(index: number): void{
     const dto= new UserID(this.users[index]);
-    this.userService.resetUserPasswordById(dto).subscribe({
+    this.userService.resetUserPasswordById(dto.username).subscribe({
       next: () => {
         console.log("Password set to 0000");
         this.getUsers();
