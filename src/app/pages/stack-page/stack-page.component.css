@@ -1,3 +1,5 @@
+@import 'C:\Users\Teo\Progetti\WebProjects\RoleManager\FE\src\app\common\back-button.css';
+
 .sitemap-navigation {
     display: inline-block;
     width: 900px;
@@ -66,49 +68,7 @@
     background: #04a4a2;
 }
 
-/*
-    BUTTON
-*/
-
 .btn {
-    width: 80px;
-    height: 25px;
-    display: block;
-    padding: 10px 40px;
-    margin: 10px auto;
-    font-size: 1.1rem;
-    font-weight: 700;
-    border-radius: 4px;
-    outline: none;
-    text-decoration: none;
-    color: #784ba0;
-    background: rgba(255, 255, 255, 0.9);
-    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    cursor: pointer;
-  }
-  
-  .btn:hover,
-  .btn:focus,
-  .btn:active,
-  .btn:visited {
-    transition-timing-function: cubic-bezier(0.6, 4, 0.3, 0.8);
-    animation: gelatine 0.5s 1;
-  }
-  
-  @keyframes gelatine {
-    0%,
-    100% {
-      transform: scale(1, 1);
-    }
-    25% {
-      transform: scale(0.9, 1.1);
-    }
-    50% {
-      transform: scale(1.1, 0.9);
-    }
-    75% {
-      transform: scale(0.95, 1.05);
-    }
-  }
-  
+    width: 8%;
+    white-space: nowrap;
+}

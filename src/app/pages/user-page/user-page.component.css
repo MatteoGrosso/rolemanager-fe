@@ -1,14 +1,14 @@
+@import 'C:\Users\Teo\Progetti\WebProjects\RoleManager\FE\src\app\common\back-button.css';
 
-
-.wrapper{
+.wrapper {
   margin: 20px 0px 20px 0px;
   position: relative;
   width: 450px;
   display: flex;
-  box-shadow: 0 1px 20px 0 rgba(69,90,100,.08);
+  box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
 }
 
-.wrapper .left{
+.wrapper .left {
   width: 35%;
   background: #ffffff83;
   padding: 30px 25px;
@@ -18,197 +18,197 @@
   color: #fff;
 }
 
-.wrapper .left img{
+.wrapper .left img {
   border-radius: 5px;
   margin-bottom: 10px;
 }
 
-.wrapper .left h4{
+.wrapper .left h4 {
   margin-bottom: 10px;
 }
 
-.wrapper .left p{
+.wrapper .left p {
   font-size: 12px;
 }
 
-.wrapper .right{
+.wrapper .right {
   width: 65%;
-  background: linear-gradient(to right,#716dec,#784ba0);
+  background: linear-gradient(to right, #716dec, #784ba0);
   padding: 30px 25px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-
 /* password */
 
 .password {
-	background: #011627;
-	border-radius: 10px;
-	width: 200px;
-	height: 40px;
-	position: relative;
-	box-shadow: 0 0 12px 0px rgba(1, 1, 1, 0.25);
-	overflow: hidden;
+  background: #011627;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  position: relative;
+  box-shadow: 0 0 12px 0px rgba(1, 1, 1, 0.25);
+  overflow: hidden;
 }
 
 .confirm {
-	top: 10px;
+  top: 10px;
 }
 
 .password-top {
-	bottom: 10px;
+  bottom: 10px;
 }
 
 .password-background {
-	background: #fefefe;
-	position: absolute;
-	width: 150%;
-	height: 100%;
-	border-radius: 5px;
-	top: 0;
-	right: -50%;
-	transition: 0.2s all ease-in-out;
+  background: #fefefe;
+  position: absolute;
+  width: 150%;
+  height: 100%;
+  border-radius: 5px;
+  top: 0;
+  right: -50%;
+  transition: 0.2s all ease-in-out;
 }
 
 .password-toggle {
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	top: 5px;
-	right: 12px;
-	z-index: 1;
-	appearance: none;
-	outline: none;
-	cursor: pointer;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 5px;
+  right: 12px;
+  z-index: 1;
+  appearance: none;
+  outline: none;
+  cursor: pointer;
 }
 .toggle-eye {
-	position: absolute;
-	width: 20px;
-	height: 20px;
-	top: 10px;
-	right: 18px;
-	font-size: 22px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  right: 18px;
+  font-size: 22px;
 }
 
 .toggle-eye.close {
-	transition: 0.4s all ease-in-out;
+  transition: 0.4s all ease-in-out;
 }
 
 .toggle-eye.open {
-	transition: 0.2s all ease-out;
+  transition: 0.2s all ease-out;
 }
 
 .eye {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	top: 50%;
-	left: 1px;
-	transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  transform: translateY(-50%);
 }
 
 .password-lock {
-	width: 20px;
-	height: 20px;
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	left: 10px;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
 }
 
 .password-input {
-	width: 200px;
-	position: absolute;
-	top: 20px;
-	transform: translateY(-50%);
-	left: 40px;
-	background: none;
-	border: none;
-	font-size: 18px;
-	color: #01a9ac;
-	outline: none;
-	transition: all 0.5s;
-	-webkit-text-security: none;
+  width: 200px;
+  position: absolute;
+  top: 20px;
+  transform: translateY(-50%);
+  left: 40px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: #01a9ac;
+  outline: none;
+  transition: all 0.5s;
+  -webkit-text-security: none;
 }
 
 .password-toggle:checked ~ .password-background {
-	width: 30px;
-	height: 30px;
-	top: 5px;
-	right: 12.5px;
-	border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  top: 5px;
+  right: 12.5px;
+  border-radius: 50%;
 }
 
 .password-toggle:checked ~ .password-input {
-	-webkit-text-security: circle;
+  -webkit-text-security: circle;
 }
 
 .password-toggle:checked ~ .password-lock {
-	color: #ffffff;
+  color: #ffffff;
 }
 
 .password-toggle:checked ~ .toggle-eye.close {
-	opacity: 0;
+  opacity: 0;
 }
 
 /* change password button */
 
-/* reset pasword button */
-
 .footer {
-	position: relative;
+  position: relative;
 }
 
 button {
-	margin: 20px;
-	bottom: 0;
-	right: 0;
-  }
-  .custom-btn {
-	width: 130px;
-	height: 40px;
-	color: #fff;
-	border-radius: 5px;
-	font-family: 'Lato', sans-serif;
-	font-weight: 500;
-	background: transparent;
-	cursor: pointer;
-	transition: all 0.3s ease;
-	position: relative;
-	display: inline-block;
-	 box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-	 7px 7px 20px 0px rgba(0,0,0,.1),
-	 4px 4px 5px 0px rgba(0,0,0,.1);
-	outline: none;
-	border: none;
-	color: #000;
-  }
-  
-  .custom-btn:after {
-	position: absolute;
-	content: "";
-	width: 0;
-	height: 100%;
-	top: 0;
-	left: 0;
-	direction: rtl;
-	z-index: -1;
-	box-shadow:
-	 -7px -7px 20px 0px #fff9,
-	 -4px -4px 5px 0px #fff9,
-	 7px 7px 20px 0px #0002,
-	 4px 4px 5px 0px #0001;
-	transition: all 0.3s ease;
-  }
-  .custom-btn:hover {
-	color: #000;
-  }
-  .custom-btn:hover:after {
-	left: auto;
-	right: 0;
-	width: 100%;
-  }
-  .custom-btn:active {
-	top: 2px;
-  }
+  margin: 20px;
+  bottom: 0;
+  right: 0;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  color: #fff;
+  border-radius: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
+  border: none;
+  color: #000;
+}
+
+.custom-btn:after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 100%;
+  top: 0;
+  left: 0;
+  direction: rtl;
+  z-index: -1;
+  box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+    7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}
+.custom-btn:hover {
+  color: #000;
+}
+.custom-btn:hover:after {
+  left: auto;
+  right: 0;
+  width: 100%;
+}
+.custom-btn:active {
+  top: 2px;
+}
+
+/* go back button */
+.btn {
+  text-align: center;
+  width: 15%;
+  bottom: 10px; /* Adjusted bottom position */
+}

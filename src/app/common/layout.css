@@ -1,0 +1,49 @@
+.menu {
+    font-size: 3vmin;
+    text-align: center;
+  }
+  
+  .menu-items {
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .menu-item {
+    color: #784ba0;
+    cursor: pointer;
+    text-transform: lowercase;
+    transition: all 0.5s;
+  }
+  
+  .menu-item:hover {
+    color:#ff3cac;
+    transition: all 0.2s;
+  }
+  
+  .menu-item:hover span {
+    animation: shine 1s ease-out alternate infinite;
+    transition: all 0.5s;
+  }
+  
+  h1 {
+    font-family: 'Quicksand';
+  }
+  
+  h1.title {
+    margin: 0;
+    line-height: 1em;
+    color: white;
+    font-weight: 100;
+    z-index: 100;
+    text-shadow: 0 0 .015em #fff, 0 0 .05em #fff, 0 0 .075em #fff, 0 0 .1em #228DFF, 0 0 .2em #228DFF, 0 0 .225em #228DFF, 0 0 .3em #228DFF, 0 0 .4em #228DFF;
+  }
+  
+  @keyframes shine {
+    0% {
+      text-shadow: 0 0 .025em rgba(255, 255, 255, 0.1), 0 0 .05em rgba(255, 255, 255, 0.1), 0 0 .75em rgba(255, 255, 255, 0.1);
+    }
+  
+    100% {
+      text-shadow: 0 0 .025em rgba(255, 255, 255, 1), 0 0 .05em rgba(255, 255, 255, 1), 0 0 .75em rgba(255, 255, 255, 0.75);
+    }
+  }
+  
