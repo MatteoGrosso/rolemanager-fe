@@ -1,6 +1,5 @@
 import { HttpErrorResponse } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { UserID } from 'src/app/dto/userID';
 import { User } from 'src/app/interfaces/user';
 import { UserService } from 'src/app/services/user.service';
 
@@ -30,8 +29,7 @@ export class UsersComponent implements OnInit{
   }
 
   resetPassword(index: number): void{
-    const dto= new UserID(this.users[index]);
-    this.userService.resetUserPasswordById(dto.username).subscribe({
+    this.userService.resetUserPasswordById(this.users[index].username).subscribe({
       next: () => {
         console.log("Password set to 0000");
         this.getUsers();
